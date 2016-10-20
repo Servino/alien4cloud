@@ -714,5 +714,21 @@
         <jacocoargline />
       </properties>
     </profile>
+
+    <profile>
+          <id>Production</id>
+          <build>
+              <plugins>
+                  <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                      <debug>false</debug>
+                      <optimize>true</optimize>
+                    </configuration>
+                  </plugin>
+              </plugins>
+          </build>
+    </profile>
   </profiles>
 </project>
