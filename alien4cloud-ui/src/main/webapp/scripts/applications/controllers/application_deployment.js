@@ -1,6 +1,6 @@
 define(function(require) {
   'use strict';
-
+  var vartest = 15;
   var modules = require('modules');
   var states = require('states');
   var _ = require('lodash');
